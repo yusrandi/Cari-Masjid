@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@mipmap/logo"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/logotulisan"
+                android:layout_width="155dp"
+                android:layout_height="25dp"/>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_more"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="45dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/more"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</androidx.appcompat.widget.Toolbar>

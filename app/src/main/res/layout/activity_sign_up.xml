@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="left|center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginRight="16dp"
+                android:layout_width="50dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="left"
+                android:src="@mipmap/logo" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/logotulisan" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include android:id="@+id/layout_choice" layout="@layout/layout_choice"/>
+            <include android:visibility="gone" android:id="@+id/layout_step_1" layout="@layout/layout_sign_up_step1"/>
+            <include android:visibility="gone" android:id="@+id/layout_step_2" layout="@layout/layout_sign_up_step2"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

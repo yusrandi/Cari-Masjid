@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Cari Masjid</string>
+    <string name="permission_rationale">Permission</string>
+    <string name="ok">OK</string>
+
+    <string name="type_city_province_region">Type country or province region …</string>
+
+</resources>

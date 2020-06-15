@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="36dp">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginBottom="36dp"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/tulisansignin" />
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etEmailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:hintEnabled="false"
+            android:background="#fff"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:fontFamily="monospace"
+                android:hint="Email Anda"
+                android:background="@drawable/background_white"
+                android:textSize="18sp"
+                android:inputType="textEmailAddress"
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            app:hintEnabled="false"
+            app:errorEnabled="true"
+            app:counterEnabled="true"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:fontFamily="monospace"
+                android:id="@+id/etPass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_white"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_margin="30dp"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_signin_click"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="20dp"
+                android:textColor="#fff"
+                android:text="Sign in"
+                android:background="@drawable/gradien"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+            <Button
+                android:id="@+id/btn_signup_click"
+                android:fontFamily="monospace"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/gradien"
+                android:text="Sign Up"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

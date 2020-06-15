@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/colorPrimaryDark">
+
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/signup_img_user"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:src="@mipmap/add_user"
+            android:scaleType="fitXY"
+            app:riv_corner_radius="30dip"
+            app:riv_mutate_background="true"
+            app:riv_oval="true"
+            android:layout_height="200dp"
+            android:layout_width="200dp" />
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:fontFamily="monospace"
+            android:textSize="18sp"
+            android:text="Tambah Foto Profil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signup_step1_btn_next"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="NEXT"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradien"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+</RelativeLayout>
